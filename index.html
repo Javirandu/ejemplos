@@ -11,9 +11,10 @@
             padding: 0
         }
 
-       #cover{
+        #cover{
             display: block;
             margin: auto;
+            margin-left: 35vw;
             margin-top: 7vh;
             max-height: 800px;
             -webkit-box-shadow: 0px 0px 87px -1px rgba(231,166,26,1);
@@ -23,21 +24,68 @@
         }
 
         #homework{
-            display: block;
+            display: flex;
+            flex-direction: column;
             text-align: center;
-            margin: 20px;
+            margin-top:2vh;
+            border: 1px solid orange;
+            border-radius: 10%;
+            background-color: rgba(231,166,26,0.5);
+            text-decoration: none;
+            color:whitesmoke;
             font: 1.5em "Arial, Helvetica, sans-serif";
+            transition: 0.7;
+            width: 10vh;
+            padding: 1vh;
+        }
+        #homework:hover{
+            background-color:rgba(255, 255, 255, 0.7);
+            color:rgba(231,166,26,1);
+            
         }
 
         body{
             background-color:#687e96;
         }
+        .float{
+            display: block;
+            flex-direction: column;
+            float:left;
+            margin-left: 10vw;
+            list-style: none;
+            text-align: center;
+            
+        }
+        .float p{
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            margin-top: 2vh;
+            background-color: rgba(231,166,26,1);
+            border-radius: 10%;
+            width: 10vh;
+            padding: 1vh;
+            color: white;
+            font-size: 1.2rem;
+        }
+        
+        .float li{
+            list-style: none;
+            width: 2vw;
+        }
         
     </style>
 </head>
-<div id="main">
+<div id="principal">
+    <div class="float">
+        <ul>
+        <li><p>Javier Díaz González</p></li>
+        <li><p>Tema 7 de SINF: Tarea 1 </p></li>
+        </ul>
+    <span><a id="homework" href="https://github.com/Javirandu/ejemplos/blob/main/D%C3%ADaz_Gonz%C3%A1lez_Javier_SINF_UD7_%20Tarea1.pdf" target="_blank">descarga </a></span>
+    </div>
     <img id="cover" class="cover" src="cover.png" alt="Portada de la tarea">
-    <span><a id="homework" href="https://github.com/Javirandu/ejemplos/blob/main/D%C3%ADaz_Gonz%C3%A1lez_Javier_SINF_UD7_%20Tarea1.pdf" target="_blank">descarga la tarea</a></span>
+    
 </div>
 
 </body>
